@@ -1,0 +1,30 @@
+ <div class="popUpDiv"> 
+ <h5 class="modal-title">Edit User</h5>
+ <div>
+    <div class="fewInputs"> 
+   <span>Name:</span>
+   <input type="text" class="form-control" placeholder="Enter first Name" [(ngModel)]="first">
+   <small *ngIf="validation.showErrorFirst">{{validation.errorFirst}}</small>
+   <input type="text" class="form-control" placeholder="Enter last Name" [(ngModel)]="last">
+   <small  *ngIf="validation.showErrorLast">{{validation.errorLast}}</small>
+   </div> 
+   <hr>
+   <span>Email:</span>
+   <input type="text" class="form-control" id="editEmail" placeholder="Enter new email"  change="valid()" [(ngModel)]="email">
+   <small *ngIf="validation.showErrorEmail">{{validation.errorEmail}}</small>
+   <hr>
+   <div class="fewInputs">
+   <span>Location:</span>
+   <input type="text" class="form-control" placeholder="Enter country"  [(ngModel)]="country">
+   <small *ngIf="validation.showErrorCountry">{{validation.errorCountry}}</small>
+   <input type="text" class="form-control" placeholder="Enter city"  [(ngModel)]="city">
+   <small *ngIf="validation.showErrorCity">{{validation.errorCity}}</small>
+   <input type="text" class="form-control" placeholder="Enter street"  [(ngModel)]="street">
+   <small *ngIf="validation.showErrorStreet">{{validation.errorStreet}}</small>
+</div>
+ </div>
+ <div class="modal-footer">
+   <button type="button" class="btn btn-primary" (click)="submitEdit()">Save changes</button>
+   <button type="button" class="btn btn-secondary" (click)="cleanErrors()" mat-dialog-close data-dismiss="modal">Close</button>
+ </div>
+ </div>

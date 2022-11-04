@@ -1,0 +1,10 @@
+<div class="confirmDialog"> 
+<h1 mat-dialog-title>Delete User</h1>
+<div mat-dialog-content>
+  Are you sure?
+</div>
+<div mat-dialog-actions class="confirmDialogBtns">
+  <button mat-button mat-dialog-close (click)="closeDialog()" type="button" class="btn btn-secondary">Keep</button>
+  <button mat-button mat-dialog-close cdkFocusInitial (click)="confirm()" type="button" class="btn btn-danger">Delete</button>
+</div>
+</div>

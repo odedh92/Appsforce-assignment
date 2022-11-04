@@ -1,0 +1,27 @@
+.popUpDiv{
+    width: 400px;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.modal-title{
+    text-align: center;
+}
+.modal-footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:2%;
+}
+
+.fewInputs{ 
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 150px;
+}
+small{
+    color: red;
+}

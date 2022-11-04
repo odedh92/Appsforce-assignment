@@ -1,0 +1,8 @@
+.confirmDialogBtns{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.confirmDialog{
+width: 150px;
+}
