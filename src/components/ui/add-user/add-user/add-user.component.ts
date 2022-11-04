@@ -36,8 +36,6 @@ export class AddUserComponent implements OnInit {
         'street':this.street
       };
       this.dialogRef.close({ data: person});
-    } else {
-      console.log('error');
     }
   }
   cleanErrors(){
